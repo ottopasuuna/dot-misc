@@ -7,6 +7,7 @@ link_map=(
     [redshift.conf]=$HOME/.config/redshift.conf
     [termite_config]=$HOME/.config/termite/config
     [mpd.conf]=$HOME/.config/mpd/mpd.conf
+    [ranger]=$HOME/.config/ranger
 )
 
 __preinstall__() {
