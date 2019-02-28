@@ -14,4 +14,5 @@ link_map=(
     [mpd.conf]=$HOME/.config/mpd/mpd.conf
     [ranger]=$HOME/.config/ranger
     [bin]=$HOME/bin
+    [abcde.conf]=$HOME/.abcde.conf
 )
