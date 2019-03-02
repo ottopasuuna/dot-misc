@@ -4,7 +4,8 @@ sudo /usr/bin/reflector --verbose --country 'Canada' -f 10 -p http --sort score 
 # sudo aura -B
 echo 'Removing all orphan packages'
 # sudo aura -Oj
-pikaur -Qdt
+orphans=`pikaur -Qdt | cut -f 1 -d ' '`
+sudo pikaur -Rsu $orphans
 echo 'Cleaning cache of uninstalled packages and old cached versions'
 sudo paccache -ruk0
 sudo paccache -rk2
