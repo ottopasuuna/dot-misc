@@ -1,3 +1,6 @@
 #! /bin/bash
-sudo rsync -aAX --delete --info=progress2 --exclude={"/backup/*","/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/lost+found","/home/carl/.cache/*","/var/cache/*"} \
-    / server1:/srv/backup/Archintosh/
+DATE=`date "+%Y-%b-%d:_%T"`
+sudo rsync -aAX --delete --info=progress2 --exclude={"/backup/*","/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/lost+found","/home/carl/*","/var/cache/*"} \
+    / server1:/srv/backup/Archintosh/latest
+ssh -t server1 "sudo cp -al /srv/backup/Archintosh/latest /srv/backup/Archintosh/$DATE"
+borg create --stats --progress --exclude-from ~/backup_exclude_carl.txt --compression zlib carl@server1:/srv/backup/carl::{now} ~
