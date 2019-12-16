@@ -2,7 +2,8 @@
 allow_bold = true
 cursor_shape = block
 dynamic_title = true
-font = DejaVuSansMonoForPowerline 13
+#font = DejaVuSansMonoForPowerline 13
+font = DejaVuSansMonoNerdFontMono 13
 browser = firefox
 fullsreen = false
 mouse_autohide = true

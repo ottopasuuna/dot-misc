@@ -1,3 +1,4 @@
+#!/bin/bash
 echo 'Updating mirror list'
 sudo /usr/bin/reflector --verbose --country 'Canada' -f 10 -p http --sort score --save /etc/pacman.d/mirrorlist
 # echo 'Backing up package list'
@@ -13,4 +14,5 @@ echo 'Updating packages'
 sudo pikaur -Syu
 echo 'Updating vim plugins'
 vim '+PlugUpdate' '+qa'
+zsh -ic "zplug update"
 conman.sh check_installed_packages
