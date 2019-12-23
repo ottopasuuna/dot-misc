@@ -15,4 +15,6 @@ link_map=(
     [ranger]=$HOME/.config/ranger
     [bin]=$HOME/bin
     [abcde.conf]=$HOME/.abcde.conf
+    [taskrc]=$HOME/.taskrc
+    [task]=$HOME/.task
 )
