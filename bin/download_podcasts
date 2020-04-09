@@ -1,0 +1,19 @@
+#!/bin/sh
+# Copied from Luke Smith https://www.youtube.com/watch?v=9KAp_zWeI34
+
+queue_file=$HOME/.local/share/newsboat/queue
+
+cd ~/Music/Podcasts
+while read -r line; do
+	[ -z "$line"  ] && continue
+	url="$(echo "$line" | awk '{print $1}')"
+	base="$(basename "$url")"
+	notify-send "Queuing $base..."
+	idnum="$(tsp curl -LO "$url")"
+	realname="$(echo "$base" | sed "s/?\(source\|dest\).*//;s/%20/ /g")"
+	tsp -D "$idnum" mv "$base" "$realname"
+	tsp -D "$idnum" notify-send "$realname done downloading."
+done < "$queue_file"
+
+echo > "$queue_file"
+
