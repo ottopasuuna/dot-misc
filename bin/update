@@ -14,5 +14,5 @@ echo 'Updating packages'
 sudo pikaur -Syu
 echo 'Updating vim plugins'
 vim '+PlugUpdate' '+qa'
-zsh -ic "zplug update"
+zsh -ic "zplg update"
 conman.sh check_installed_packages
