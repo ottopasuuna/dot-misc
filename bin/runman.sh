@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function usage() {
-    echo "$0 [-c connection_method] [host] /path/to/app"
+    echo "usage: $0 [-c connection_method] [host] /path/to/app"
 }
 
 function get_app_info() {
