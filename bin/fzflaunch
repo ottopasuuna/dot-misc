@@ -1,0 +1,44 @@
+#!/bin/bash
+# Requires lnch to allow process to stay alive after terminal closes
+# (disown and nohub aren't sufficient) https://github.com/oem/lnch
+
+PASSBIN=$(which pass)
+
+run() {
+   bin_locations=$(echo $PATH | tr ":" "\n")
+   executables=$(ls $bin_locations | grep -v "^/.*:$")
+   selected="$(echo $executables | tr " " "\n" | sort | uniq | fzf -e -i -m --reverse --with-nth -1)"
+    [ -z "$selected" ] && exit
+    # echo $selected
+    lnch $selected
+}
+
+pass() {
+    pass_dir=${HOME}/.password-store/
+    selected=$(find $pass_dir -name "*.gpg" \
+                | sed -e  "s;$pass_dir;;g" -e "s/.gpg//g" \
+                | fzf --no-sort --reverse)
+    [ -z "$selected" ] && exit
+    # echo $selected
+    lnch $PASSBIN -c $selected
+}
+
+
+############ Main entry ############
+
+args=("$@")
+cmd_args="${args[@]:1}"
+
+subcommand=$1
+
+case $subcommand in
+    'run')
+        $(run) ;;
+    'pass')
+        $(pass) ;;
+    *)
+        # Run fzf to select the subcommand
+        subcommand=$(echo -e "run\npass" | fzf)
+        $subcommand
+        ;;
+esac
