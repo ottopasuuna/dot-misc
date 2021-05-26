@@ -11,6 +11,7 @@ link_map=(
     [gitconfig]=$HOME/.gitconfig
     [redshift.conf]=$HOME/.config/redshift.conf
     [termite_config]=$HOME/.config/termite/config
+    [alacritty]=$HOME/.config/alacritty
     [mpd.conf]=$HOME/.config/mpd/mpd.conf
     [ranger]=$HOME/.config/ranger
     [bin]=$HOME/bin
