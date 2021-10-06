@@ -13,5 +13,5 @@ echo 'Updating packages'
 pikaur -Syu
 echo 'Updating vim plugins'
 vim '+PlugUpdate' '+qa'
-zsh -ic "zplg update"
+zsh -ic "zinit self-update && zinit update --parallel"
 conman.sh check_installed_packages
