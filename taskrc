@@ -29,9 +29,9 @@ data.location=$XDG_DATA_HOME/task
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 #
-taskd.certificate=~/.task/private.certificate.pem
-taskd.key=~/.task/private.key.pem
-taskd.ca=~/.task/ca.cert.pem
+taskd.certificate=$XDG_DATA_HOME/task/private.certificate.pem
+taskd.key=$XDG_DATA_HOME/task/private.key.pem
+taskd.ca=$XDG_DATA_HOME/task/ca.cert.pem
 taskd.server=taskwarrior.inthe.am:53589
 taskd.credentials=inthe_am/jawaofsktoon/90b281d4-83fb-4260-96b4-33b99fa3f3ae
 taskd.trust=ignore hostname
