@@ -3,6 +3,7 @@ description="Miscellaneous config files"
 ensure_dirs=(
     $HOME/.config/termite
     $HOME/.config/mpd
+    $HOME/.config/task
 )
 
 link_map=(
@@ -16,6 +17,6 @@ link_map=(
     [ranger]=$HOME/.config/ranger
     [bin]=$HOME/bin
     [abcde.conf]=$HOME/.abcde.conf
-    [taskrc]=$HOME/.taskrc
-    [task]=$HOME/.task
+    [taskrc]=$HOME/.config/task/taskrc
+    [task]=$HOME/.local/share/task
 )
