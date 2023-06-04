@@ -16,19 +16,26 @@ data.location=$XDG_DATA_HOME/task
 # Color theme (uncomment one to use)
 #include /usr/share/doc/task/rc/light-16.theme
 #include /usr/share/doc/task/rc/light-256.theme
-#include /usr/share/doc/task/rc/dark-16.theme
-#include /usr/share/doc/task/rc/dark-256.theme
+# include /usr/share/doc/task/rc/dark-16.theme
+include /usr/share/doc/task/rc/dark-256.theme
 #include /usr/share/doc/task/rc/dark-red-256.theme
 #include /usr/share/doc/task/rc/dark-green-256.theme
-#include /usr/share/doc/task/rc/dark-blue-256.theme
+# include /usr/share/doc/task/rc/dark-blue-256.theme
 #include /usr/share/doc/task/rc/dark-violets-256.theme
 #include /usr/share/doc/task/rc/dark-yellow-green.theme
-#include /usr/share/doc/task/rc/dark-gray-256.theme
+# include /usr/share/doc/task/rc/dark-gray-256.theme
 #include /usr/share/doc/task/rc/dark-gray-blue-256.theme
 #include /usr/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
-#include /usr/share/doc/task/rc/no-color.theme
-#
+# include /usr/share/doc/task/rc/no-color.theme
+color.scheduled=black on green
+color.blocking=bold
+color.uda.priority.H=bold rgb550
+color.project.house=blue
+color.alternate=on gray2
+color.active=white on color12
+# color.tag.dev=bright green
+
 taskd.certificate=$XDG_DATA_HOME/task/private.certificate.pem
 taskd.key=$XDG_DATA_HOME/task/private.key.pem
 taskd.ca=$XDG_DATA_HOME/task/ca.cert.pem
@@ -38,13 +45,16 @@ taskd.trust=ignore hostname
 uda.priority.values=H,M,,L
 uda.estimate.type=duration
 uda.estimate.label=Est
-report.next.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Est,Due,Until,Description,Urg
-report.next.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,estimate,due.relative,until.remaining,description.count,urgency
+report.next.labels=ID,Age,Deps,P,Project,Tag,Recur,S,Est,Due,Until,Description,Urg
+report.next.columns=id,entry.age,depends,priority,project,tags,recur,scheduled.countdown,estimate,due.relative,until.remaining,description.count,urgency
 report.next.filter=status:pending limit:page -BLOCKED -WAITING
 news.version=2.6.0
+dateformat=d/m/Y
 context.house.read=project:house
 context.house.write=project:house
 context.config.read=+config
 context.config.write=+config
-context.main.read=-config
-context.main.write=-config
+context.dev.read=+dev
+context.dev.write=+dev
+context.main.read=-config -dev -books
+context=main
