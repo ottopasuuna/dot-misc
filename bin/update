@@ -1,6 +1,13 @@
 #!/bin/bash
 echo 'Cleaning up old journal files'
 sudo journalctl --vacuum-time=2months
+echo 'Pruning unused containers and images'
+podman container prune -f
+podman image prune -f
+docker container prune -f
+docker image prune -f
+sudo podman container prune -f
+sudo podman image prune -f
 echo 'Updating mirror list'
 sudo /usr/bin/reflector --verbose --country 'Canada' -f 10 -p http --sort score --save /etc/pacman.d/mirrorlist
 echo 'Removing all orphan packages'
@@ -9,8 +16,14 @@ sudo pikaur -Rsu $orphans
 echo 'Cleaning cache of uninstalled packages and old cached versions'
 sudo paccache -ruk0
 sudo paccache -rk2
+paccache -ruk0 --cachedir ${XDG_CACHE_HOME}/pikaur/pkg
+paccache -rk2 --cachedir ${XDG_CACHE_HOME}/pikaur/pkg
 echo 'Updating packages'
 pikaur -Syu
+echo 'Updating Nix packages'
+nix-env -u
+echo 'Updateing miniconda'
+conda upgrade conda -y
 echo 'Updating vim plugins'
 vim '+PlugUpdate' '+qa'
 zsh -ic "zinit self-update && zinit update --parallel"
