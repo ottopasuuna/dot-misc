@@ -5,5 +5,5 @@ DATE=`date "+%Y-%b-%d:_%T"`
 # ssh -t server1 "sudo cp -al /srv/backup/Archintosh/latest /srv/backup/Archintosh/$DATE"
 sudo borg create --stats --progress --one-file-system --exclude-from /home/carl/backup_exclude_root.txt --compression zlib carl@server1:/srv/backup/Archintosh/Borg::{now} /
 borg create --stats --progress --one-file-system --exclude-from ~/backup_exclude_carl.txt --compression zlib carl@server1:/srv/backup/carl::{now} ~
-borg create --stats --progress --one-file-system --compression zlib carl@server1:/srv/backup/media/carl::{now} /media/carl
+# borg create --stats --progress --one-file-system --exclude-from ~/backup_exclude_media.txt --compression zlib carl@server1:/srv/backup/media/carl::{now} /media/carl
 ssh -t carl@server1 '~/backup.sh'
