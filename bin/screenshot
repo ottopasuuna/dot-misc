@@ -1,0 +1,3 @@
+#!/bin/sh
+
+scrot -s - | xclip -t image/png -selection c
