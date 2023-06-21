@@ -21,7 +21,7 @@ paccache -rk2 --cachedir ${XDG_CACHE_HOME}/pikaur/pkg
 echo 'Updating packages'
 pikaur -Syu
 echo 'Updating Nix packages'
-nix-env -u
+NIXPKGS_ALLOW_UNFREE=1 nix profile upgrade '.*' --impure
 echo 'Updateing miniconda'
 conda upgrade conda -y
 echo 'Updating vim plugins'
