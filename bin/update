@@ -22,9 +22,9 @@ echo 'Updating packages'
 pikaur -Syu
 echo 'Updating Nix packages'
 NIXPKGS_ALLOW_UNFREE=1 nix profile upgrade '.*' --impure
+nix store gc
 echo 'Updateing miniconda'
 conda upgrade conda -y
 echo 'Updating vim plugins'
 vim '+PlugUpdate' '+qa'
 zsh -ic "zinit self-update && zinit update --parallel"
-conman.sh check_installed_packages
