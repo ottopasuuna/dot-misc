@@ -76,7 +76,6 @@ AddPackage graphviz # Graph visualization software
 AddPackage grep # A string search utility
 AddPackage gzip # GNU compression utility
 AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parameters
-AddPackage helm-synth # A cross-platform, polyphonic synthesizer, available standalone and as an LV2 plugin
 AddPackage highlight # Fast and flexible source code highlighter (CLI version)
 AddPackage hledger # Command-line interface for the hledger accounting system
 AddPackage hugo # Fast and Flexible Static Site Generator in Go
@@ -273,6 +272,7 @@ AddPackage --foreign env-modules # Provides for an easy dynamic modification of 
 AddPackage --foreign flashplugin # Adobe Flash Player NPAPI
 AddPackage --foreign gamehub # Games manager, downloader, library that supports GOG, Steam and Humble Bundle
 AddPackage --foreign genymotion # Complete set of tools that provides a virtual environment for Android.
+AddPackage --foreign helm-synth # A cross-platform, polyphonic synthesizer, available standalone and as an LV2 plugin
 AddPackage --foreign itch-setup-bin # Installer for the itch.io desktop app
 AddPackage --foreign libretro-duckstation # Sony PlayStation core
 AddPackage --foreign likwid # Lightweight performance tools
