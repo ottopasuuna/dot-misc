@@ -19,4 +19,5 @@ link_map=(
     [abcde.conf]=$HOME/.abcde.conf
     [taskrc]=$HOME/.config/task/taskrc
     [task]=$HOME/.local/share/task
+    [aconfmgr]=$HOME/.config/aconfmgr
 )

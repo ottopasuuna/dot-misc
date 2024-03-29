@@ -1,0 +1,6 @@
+[Match]
+Name=wlp5s0
+
+[Network]
+DHCP=ipv4
+IgnoreCarrierLoss=3s
