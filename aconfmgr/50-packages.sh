@@ -172,6 +172,7 @@ AddPackage python-certifi # Python package for providing Mozilla's CA Bundle (us
 AddPackage python-llfuse # A set of Python bindings for the low level FUSE API.
 AddPackage python-pip # The PyPA recommended tool for installing Python packages
 AddPackage qemu-desktop # A QEMU setup for desktop environments
+AddPackage qjackctl # A Qt front-end for the JACK low-latency audio server
 AddPackage qmk # CLI tool for customizing supported mechanical keyboards.
 AddPackage raylib # Simple and easy-to-use game programming library
 AddPackage realtime-privileges # Realtime privileges for users
@@ -259,7 +260,6 @@ AddPackage --foreign abcde # Frontend command-line utility that grabs tracks off
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign blender-benchmark # Benchmark based on Blender to perform hardware and software performance tests
 AddPackage --foreign brother-mfc-l2700dw # LPR and CUPS driver for the Brother MFC-L2700DW
-AddPackage --foreign cadence-git # JACK toolbox for audio production.
 AddPackage --foreign decent-sampler-bin # a sampling plugin that allows you to play samples in the Decent Sampler format
 AddPackage --foreign digilent.waveforms # Digilent WaveForms Application, Runtime and SDK
 AddPackage --foreign disable-c6-systemd # A systemd service to disable the C6 state for Ryzen CPUs
@@ -272,14 +272,11 @@ AddPackage --foreign env-modules # Provides for an easy dynamic modification of 
 AddPackage --foreign flashplugin # Adobe Flash Player NPAPI
 AddPackage --foreign gamehub # Games manager, downloader, library that supports GOG, Steam and Humble Bundle
 AddPackage --foreign genymotion # Complete set of tools that provides a virtual environment for Android.
-AddPackage --foreign helm-synth # A cross-platform, polyphonic synthesizer, available standalone and as an LV2 plugin
 AddPackage --foreign itch-setup-bin # Installer for the itch.io desktop app
-AddPackage --foreign libretro-duckstation # Sony PlayStation core
 AddPackage --foreign likwid # Lightweight performance tools
 AddPackage --foreign makemkv # DVD and Blu-ray to MKV converter
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
 AddPackage --foreign mprime-bin # A GIMPS, distributed computing project client, dedicated to finding Mersenne primes. Precompiled binary version.
-AddPackage --foreign openav-fabla2-git # Multi-purpose advanced LV2 sampler plugin
 AddPackage --foreign openexr_viewers # exrdisplay and playexr OpenEXR image viewers
 AddPackage --foreign pacvis-git # Visualize pacman local database using Vis.js, inspired by pacgraph
 AddPackage --foreign pepper-flash # Adobe Flash Player PPAPI
@@ -291,7 +288,6 @@ AddPackage --foreign q # SQL-like queries on tabular text data, including joins 
 AddPackage --foreign simple-mtpfs # A FUSE filesystem that supports reading/writing from MTP devices
 AddPackage --foreign snixembed # proxy the StatusNotifierItem protocol to the XEmbed System Tray
 AddPackage --foreign spotify # A proprietary music streaming service
-AddPackage --foreign surge-synthesizer-bin # Surge Synthesizer plugin (VST3, original binary release)
 AddPackage --foreign talon-bin # Powerful hands-free voice and gaze input scriptable with Python
 AddPackage --foreign task-spooler # Queue up tasks from the shell for batch execution
 AddPackage --foreign taskopen-git # Script for taking notes and open urls with taskwarrior (staging branch)
