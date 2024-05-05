@@ -32,3 +32,6 @@ CopyFile /etc/X11/xorg.conf.d/10-archintosh.conf '' carl users
 # Set default java version. I set this at some point for some reason, forget why
 CreateLink /usr/lib/jvm/default java-8-openjdk/jre
 CreateLink /usr/lib/jvm/default-runtime java-8-openjdk/jre
+
+# Nix stuff
+CopyFile /etc/nix/nix.conf
