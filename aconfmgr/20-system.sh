@@ -14,8 +14,7 @@ CopyFile /etc/ssh/sshd_config.d/10-archintosh.conf
 # Networking stuff
 CopyFile /etc/hosts
 CopyFile /etc/nsswitch.conf
-
-IgnorePath /etc/resolv.conf # Created automatically? doesn't look like something I want to commit to vcs
+CopyFile /etc/resolv.conf
 
 # Contains wifi password in plain text, maybe don't commit to vcs?
 IgnorePath /etc/wpa_supplicant/*

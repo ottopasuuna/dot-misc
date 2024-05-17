@@ -146,6 +146,7 @@ AddPackage npm # A package manager for JavaScript
 AddPackage nss-mdns # glibc plugin providing host name resolution via mDNS
 AddPackage nvidia # NVIDIA drivers for linux
 AddPackage nvidia-settings # Tool for configuring the NVIDIA graphics driver
+AddPackage opam # OCaml package manager
 AddPackage opencl-nvidia # OpenCL implemention for NVIDIA
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
 AddPackage p7zip # Command-line file archiver with high compression ratio
@@ -208,6 +209,13 @@ AddPackage timidity++ # A MIDI to WAVE converter and player
 AddPackage tmux # Terminal multiplexer
 AddPackage traceroute # Tracks the route taken by packets over an IP network
 AddPackage trayer # lightweight GTK2-based systray for UNIX desktop
+AddPackage tree-sitter-bash
+AddPackage tree-sitter-c
+AddPackage tree-sitter-lua
+AddPackage tree-sitter-markdown
+AddPackage tree-sitter-python
+AddPackage tree-sitter-query
+AddPackage tree-sitter-vimdoc
 AddPackage ttf-dejavu # Font family based on the Bitstream Vera Fonts with a wider range of characters
 AddPackage ttf-dejavu-nerd # Patched font Dejavu Sans Mono from nerd fonts library
 AddPackage ttf-droid # General-purpose fonts released by Google as part of Android
@@ -246,6 +254,7 @@ AddPackage xscreensaver # Screen saver and locker for the X Window System
 AddPackage xterm # X Terminal Emulator
 AddPackage xz # Library and command line tools for XZ and LZMA compressed files
 AddPackage ytfzf # A POSIX script to find and watch youtube videos from the terminal
+AddPackage z3 # High-performance theorem prover
 AddPackage zathura # Minimalistic document viewer
 AddPackage zathura-pdf-poppler # Adds pdf support to zathura by using the poppler engine
 AddPackage zeromq # Fast messaging system built on sockets. C and C++ bindings. aka 0MQ, ZMQ.
