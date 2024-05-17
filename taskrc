@@ -36,12 +36,6 @@ color.alternate=on gray2
 color.active=white on color12
 # color.tag.dev=bright green
 
-taskd.certificate=$XDG_DATA_HOME/task/private.certificate.pem
-taskd.key=$XDG_DATA_HOME/task/private.key.pem
-taskd.ca=$XDG_DATA_HOME/task/ca.cert.pem
-taskd.server=taskwarrior.inthe.am:53589
-taskd.credentials=inthe_am/jawaofsktoon/90b281d4-83fb-4260-96b4-33b99fa3f3ae
-taskd.trust=ignore hostname
 uda.priority.values=H,M,,L
 uda.estimate.type=duration
 uda.estimate.label=Est
