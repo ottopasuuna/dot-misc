@@ -4,6 +4,7 @@ ensure_dirs=(
     $HOME/.config/termite
     $HOME/.config/mpd
     $HOME/.config/task
+    $HOME/.config/pulse
 )
 
 link_map=(
@@ -21,4 +22,8 @@ link_map=(
     [taskrc]=$HOME/.config/task/taskrc
     [task]=$HOME/.local/share/task
     [aconfmgr]=$HOME/.config/aconfmgr
+    [asoundrc]=$HOME/.asoundrc
+    [jackdrc]=$HOME/.jackdrc
+    [pulse/client.conf]=$HOME/.config/pulse/client.conf
+    [pulse/daemon.conf]=$HOME/.config/pulse/daemon.conf
 )
