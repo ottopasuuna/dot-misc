@@ -10,7 +10,6 @@ AddPackage atool # A script for managing file archives of various types
 AddPackage audacity # A program that lets you manipulate digital audio waveforms
 AddPackage autoconf # A GNU tool for automatically configuring source code
 AddPackage automake # A GNU tool for automatically creating Makefiles
-AddPackage awesome # Highly configurable framework window manager
 AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage bash # The GNU Bourne Again shell
@@ -267,6 +266,7 @@ AddPackage zsh # A very advanced and programmable command interpreter (shell) fo
 
 AddPackage --foreign abcde # Frontend command-line utility that grabs tracks off a CD, encodes them to ogg or mp3 format, and tags them, all in one go
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
+AddPackage --foreign awesome-git # Highly configurable framework window manager
 AddPackage --foreign blender-benchmark # Benchmark based on Blender to perform hardware and software performance tests
 AddPackage --foreign brother-mfc-l2700dw # LPR and CUPS driver for the Brother MFC-L2700DW
 AddPackage --foreign decent-sampler-bin # a sampling plugin that allows you to play samples in the Decent Sampler format
