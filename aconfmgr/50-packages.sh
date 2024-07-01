@@ -90,6 +90,7 @@ AddPackage jack2-dbus # The JACK low-latency audio server (dbus integration)
 AddPackage jq # Command-line JSON processor
 AddPackage jsampler # LinuxSampler Java GUI
 AddPackage julia # High-level, high-performance, dynamic programming language
+AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulator
 AddPackage krita # Edit and paint images
 AddPackage less # A terminal based program for viewing text files
 AddPackage lib32-libpulse # A featureful, general-purpose sound server (32-bit client libraries)
