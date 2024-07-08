@@ -16,6 +16,7 @@ link_map=(
     [alacritty]=$HOME/.config/alacritty
     [kitty]=$HOME/.config/kitty
     [mpd.conf]=$HOME/.config/mpd/mpd.conf
+    [ncmpcpp]=$HOME/.config/ncmpcpp
     [ranger]=$HOME/.config/ranger
     [bin]=$HOME/bin
     [abcde.conf]=$HOME/.abcde.conf

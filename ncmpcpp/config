@@ -1,0 +1,11 @@
+browser_display_mode = columns
+playlist_editor_display_mode = columns
+search_engine_display_mode = columns
+playlist_display_mode = columns
+cyclic_scrolling = yes
+user_interface = alternative
+use_console_editor = yes
+external_editor = /usr/bin/nvim
+lyrics_directory = ~/.local/share/ncmpcpp/lyrics
+ncmpcpp_directory = ~/.local/share/ncmpcpp
+allow_for_physical_item_deletion = yes
