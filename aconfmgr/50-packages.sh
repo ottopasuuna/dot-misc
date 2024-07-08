@@ -273,9 +273,9 @@ AddPackage --foreign brother-mfc-l2700dw # LPR and CUPS driver for the Brother M
 AddPackage --foreign decent-sampler-bin # a sampling plugin that allows you to play samples in the Decent Sampler format
 AddPackage --foreign digilent.waveforms # Digilent WaveForms Application, Runtime and SDK
 AddPackage --foreign disable-c6-systemd # A systemd service to disable the C6 state for Ryzen CPUs
-AddPackage --foreign djv # Professional media review software for VFX, animation, and film production
+# AddPackage --foreign djv # Professional media review software for VFX, animation, and film production
 AddPackage --foreign dnslookup-bin # Simple command line utility to make DNS lookups to the specified server
-AddPackage --foreign dssi-vst # DSSI adapter/wrapper for win32 VST plug-ins
+# AddPackage --foreign dssi-vst # DSSI adapter/wrapper for win32 VST plug-ins
 AddPackage --foreign duckdb-bin # An in-process SQL OLAP database management system
 AddPackage --foreign dwarftherapist # Heavily modified version of the original Dwarf Therapist.
 AddPackage --foreign env-modules # Provides for an easy dynamic modification of a user's environment via modulefile.
@@ -287,7 +287,7 @@ AddPackage --foreign likwid # Lightweight performance tools
 AddPackage --foreign makemkv # DVD and Blu-ray to MKV converter
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
 AddPackage --foreign mprime-bin # A GIMPS, distributed computing project client, dedicated to finding Mersenne primes. Precompiled binary version.
-AddPackage --foreign openexr_viewers # exrdisplay and playexr OpenEXR image viewers
+# AddPackage --foreign openexr_viewers # exrdisplay and playexr OpenEXR image viewers
 AddPackage --foreign pacvis-git # Visualize pacman local database using Vis.js, inspired by pacgraph
 AddPackage --foreign pepper-flash # Adobe Flash Player PPAPI
 AddPackage --foreign perceptualdiff-git # A fork of the perceptualdiff image comparison tool (pdiff.sourceforge.net) with OpenMP support
@@ -301,8 +301,8 @@ AddPackage --foreign spotify # A proprietary music streaming service
 AddPackage --foreign talon-bin # Powerful hands-free voice and gaze input scriptable with Python
 AddPackage --foreign task-spooler # Queue up tasks from the shell for batch execution
 AddPackage --foreign taskopen-git # Script for taking notes and open urls with taskwarrior (staging branch)
-AddPackage --foreign tasksh # A shell command that wraps Taskwarrior commands
-AddPackage --foreign termite # A simple VTE-based terminal
+# AddPackage --foreign tasksh # A shell command that wraps Taskwarrior commands
+# AddPackage --foreign termite # A simple VTE-based terminal
 AddPackage --foreign ttf-ms-fonts # Core TTF Fonts from Microsoft
 AddPackage --foreign vcvrack-bin # Open-source virtual modular synthesizer
 AddPackage --foreign vertex-themes # Vertex Gtk2, Gtk3, Metacity, Xfwm, Cinnamon and GNOME Shell themes (GNOME 3.22 version)
